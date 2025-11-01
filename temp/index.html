@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Water Quality Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>💧 Water Quality Prediction</h1>
+    <form action="/predict" method="POST">
+      <label>Year
+        <input type="number" name="year" placeholder="Enter year (e.g., 2025)" required>
+      </label>
+      <label>Temperature
+        <input type="text" name="temp" placeholder="Enter temperature (°C)" required>
+      </label>
+      <label>Dissolved Oxygen
+        <input type="text" name="do" placeholder="Enter DO (mg/L)" required>
+      </label>
+      <label>pH
+        <input type="text" name="ph" placeholder="Enter pH level" required>
+      </label>
+      <label>Conductivity
+        <input type="text" name="cond" placeholder="Enter conductivity (µS/cm)" required>
+      </label>
+      <label>BOD
+        <input type="text" name="bod" placeholder="Enter BOD (mg/L)" required>
+      </label>
+      <label>Nitrate
+        <input type="text" name="nitrate" placeholder="Enter nitrate (mg/L)" required>
+      </label>
+      <label>Fecal Coliform
+        <input type="text" name="fecal_coliform" placeholder="Enter fecal coliform" required>
+      </label>
+      <label>Total Coliform
+        <input type="text" name="total_coliform" placeholder="Enter total coliform" required>
+      </label>
+      <button type="submit">🔍 Predict</button>
+    </form>
+  </div>
+</body>
+</html>

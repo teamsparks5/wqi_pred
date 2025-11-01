@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    {% if prediction %}
+      <div class="result-box">
+        🌿 <strong>Predicted Water Quality:</strong> {{ prediction }}<br>
+        📅 <strong>Year:</strong> {{ year }}
+      </div>
+    {% elif error %}
+      <div class="error-box">
+        ⚠️ <strong>{{ error }}</strong>
+      </div>
+    {% endif %}
+    <a href="/">← Go Back</a>
+  </div>
+</body>
+</html>
