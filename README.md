@@ -1,1 +1,3 @@
-# wqi_pred
+Our work presented a novel hybrid approach for time seriesbased water quality prediction by integrating a Long ShortTerm Memory network with an XGBoost regression model. The LSTM effectively learned temporal dependencies from sequential sensor data, while XGBoost enhanced predictive performance by capturing nonlinear relationships and reducing overfitting. Experimental data showed that the suggested hybrid model significantly outperformed traditional standalone methods in terms of RMSE, MAE, and R squared 
+accuracy. 
+With the XGBoost + LSTM Ensemble learning model we achieved accuracy upto 99.23% 
